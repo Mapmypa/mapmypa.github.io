@@ -14,6 +14,7 @@
     background: #383636
    }
   </style>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 	
 	<p class="text48">Подпишитесь на рассылку!</p>
 	
-	<form class="send_message" autocomplete="off">
+	<form action="index.php" class="send_message" method="post" autocomplete="off">
 		<div class="form_message"> 
 			<div>
 				<label>Имя <span>*</span></label>
@@ -50,13 +51,14 @@
 			</div>
 			<div>
 				<label>E-mail <span>*</span></label>
-				<input type='text' name='usernumber' required>
+				<input type='text' name='email' required>
 			</div>
 			<div>
 				<label>Сообщение</label>
-				<input type='text' name='question'>
+				<input type='text' name='message'>
 			</div>
-			<input class="butt_message" type='submit' value='Подписаться'>
+			<input type="hidden" name="hidden" value="ok">
+			<input class="butt_message" type='submit' value='Подписаться' name='Submit' onClick="return Formdata(this.form)">
 		</div>
 	</form>
 	
