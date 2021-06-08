@@ -440,6 +440,19 @@ footer.top_footer.picture {
 	background-color: #fff;
 }
 
+
+.td_style {
+	margin: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+    font-size: 20px;
+	text-align: center;
+    color: gray;
+	border: 2px solid ;
+}
+
+
+
 /*--------------------------------*/
 
 

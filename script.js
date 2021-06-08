@@ -14,8 +14,12 @@ if(data.email != null && data.email.value.length < 6)
 alert('слишком короткий «E-Mail»');
 return false;}
 
-console.log(data.username.value);
-console.log(data.e-mail.value);
-console.log(data.message.value);
-
+//if(!(/^\w+[-_\.]*\w+@\w+-?\w+\.[a-z]{2,4}$/.test(data.email.value)) )
+//{
+//alert('Введите правильный E-Mail адрес');
+//return false;}
 }
+
+//console.log(data.username);
+//console.log(data.e-mail);
+//console.log(data.message);
